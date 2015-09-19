@@ -1,0 +1,158 @@
+<html>
+
+  <head>
+  <link rel="stylesheet" href="css/style.css">
+ 
+     <title>Welcome to Agri support system </title>
+	 <style>
+	 
+	  @media screen and (max-width :250px)
+	  {
+	  *{
+	  padding:0;
+	  margin:0;
+	  }
+	  body{
+	  position:absolute;
+	  background-color:#33CC66;
+	  }
+	  }
+	    @media screen and (max-width :450px){
+  	     #header
+			 {
+		font-size:10px;
+		background-color:white;
+			height:20px;
+	box-shadow: 0px 0px 12px rgba(88, 83, 74, .7);
+   }	 
+.home{
+width:308px;
+border-bottom:5px solid #33CC66;
+	box-shadow: 0px 0px 12px rgba(88, 83, 74, .7);
+}
+#section1{
+ text-align:center;
+ float:center; 
+ margin-top:60px;
+ margin-left:-20px;
+}
+.square1{
+border:1px solid grey;
+padding:10px;
+width:100px;
+
+background-color:grey;
+}
+.square2{
+border:1px solid grey;
+padding:10px;
+width:100px;
+background-color:#33CC66;
+}
+.link1:hover,:link{
+color:black;
+
+
+}
+.link1:hover,:link{
+color:black;
+
+}
+.exhead{
+   background-color:#33CC66;
+padding:10px;
+text-align:center;
+}
+#section2{
+margin-top:40px;
+}
+.user{
+width:250px;
+height:30px;
+margin-left:40px;
+}
+.password{
+width:250px;
+height:30px;
+margin-left:40px;
+}
+.submit{
+margin-left:40px;
+width:150px;
+height:30px;
+background-color:#33CC66;
+}
+   }
+
+	 
+	 </style>
+	<script>
+	function send(){
+				       var a = document.forms["exForm"]["exuser"].value;
+ var b = document.forms["exForm"]["expassword"].value;
+ 
+ 	     
+
+if (a == null || a == "")
+ {
+        alert("Please Enter the Username ");
+        return false;
+    }
+
+if (b == null || b =="") 
+{
+        alert("Please Enter the Password ");
+        return false;
+    }
+
+}
+			function send1(){
+			  var c = document.forms["newForm"]["newuser"].value;
+ var d = document.forms["newForm"]["newpassword"].value;
+	if (c == null || c == "")
+ {
+        alert("Please Enter the Username ");
+        return false;
+    }
+
+if (d == null || d =="") 
+{
+        alert("Please Enter the Password ");
+        return false;
+    }
+			}	 
+
+				  </script>
+  </head>
+   <body>
+ <diV id="header">
+     
+	 <img class="home" src="images/home.jpg">
+ </div
+ <br>
+  <div id="section1">
+<span class="square1">
+<a href="index1.html" class="link1">login in</a>
+</span>
+<span class="square2">
+<a href="register.html" class="link2">Register</a>
+</span>
+	
+</div>
+
+    <div id="section2">
+  
+	<form method="post" action="signup.jsp" name="newForm" onsubmit="send1()">
+	<div class="exhead">New farmer</div>
+	<br>
+<input type="text" id="newuser" name="newuser" required="required" class="user" placeholder="Enter Your Name">	
+	<input type="password" id="newpassword" name="newpassword" required="required" class="password" placeholder=" Enter Your password"><br>
+<input type="submit" value="login" class="submit">
+	</form>
+	</table>
+</div>
+
+    
+   </body>
+
+</html>
